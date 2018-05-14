@@ -1,0 +1,4 @@
+- name: install
+  command: "{{ bower_executable }} install {{ pkg | default('') }}"
+  args:
+    chdir: "{{ chdir | default('.') }}"
